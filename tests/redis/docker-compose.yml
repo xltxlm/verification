@@ -1,0 +1,15 @@
+version: '2'
+services:
+  redis:
+    image: redis
+    networks:
+      comm:
+        aliases:
+          - redis
+    ports:
+        - "6379:6379/tcp"
+
+    restart: always
+
+networks:
+    comm:

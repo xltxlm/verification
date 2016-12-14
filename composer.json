@@ -1,0 +1,36 @@
+{
+  "name": "xltxlm/verification",
+  "description": "高并发下完整验证各种中间件服务的策略",
+  "authors": [
+    {
+      "name": "xltxlm",
+      "email": "xltxlm@qq.com"
+    }
+  ],
+  "require": {
+    "php": ">=7.0",
+    "xltxlm/helper": "*",
+    "predis/predis": "*",
+    "xltxlm/jmeter": "*",
+    "guzzlehttp/guzzle": "~6"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "*",
+    "squizlabs/php_codesniffer": "*",
+    "friendsofphp/php-cs-fixer": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "xltxlm\\verification\\": [
+        "src/"
+      ]
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "xltxlm\\verification\\": [
+        "./"
+      ]
+    }
+  }
+}
