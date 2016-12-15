@@ -1,0 +1,25 @@
+version: '2'
+services:
+  kafka:
+    image: docker-kafka
+    networks:
+      comm:
+        aliases:
+          - kafka
+    entrypoint: tail -f /root/.bashrc
+    restart: always
+
+  php:
+    image: docker-php
+    entrypoint: tail -f /root/.bashrc
+    volumes:
+      - ../../:/source/
+    networks:
+      comm:
+        aliases:
+          - php
+
+    restart: always
+
+networks:
+    comm:
