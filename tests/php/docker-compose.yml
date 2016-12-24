@@ -1,0 +1,14 @@
+version: '2'
+services:
+  php:
+    image: php
+    env_file: D:\360\code\xltxlm\verification\tests\env_file.env
+    command: tail -f /etc/issue
+    networks:
+      comm:
+        aliases:
+          - php
+    restart: always
+
+networks:
+    comm:

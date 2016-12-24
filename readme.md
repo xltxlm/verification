@@ -1,7 +1,7 @@
 + redis
     + 验证高并发情况下,redis的get不到再set是否会重复set **答案是不安全** (redis/GetandSet.php)
     + 验证高并发情况下,setnx逻辑是否安全 **答案是安全** (redis/GetAndSetNX.php)
-    + 高并发下队列读写,是否会重复
+    + 高并发下队列读写,是否会重复多读出 **答案是安全**
 
 + kafka 
     + 搭建单机服务,按照官方demo运行一遍  https://kafka.apache.org/quickstart
@@ -19,4 +19,7 @@
     
 
 + jenkins
-    + 搭建服务
+    + doceke启动服务,8080端口
+    + 安装密码看日志: Please use the following password to proceed to installation:
+               c1b963dc7ff146e89a934d103fe57bed
+    +
